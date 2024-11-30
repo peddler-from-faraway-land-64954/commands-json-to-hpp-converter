@@ -1,0 +1,41 @@
+[
+	{
+		"name": "ping",
+		"description": "Ping pong!",
+		"function": "ping",
+		"args": []
+	},
+	{
+		"name": "color",
+		"description": "Set color",
+		"function": "color",
+		"args": [
+			{
+				"name": "color",
+				"description": "Color name or hex",
+				"type": "string",
+				"required": false
+			}
+		]
+	},
+	{
+		"name": "set",
+		"description": "Set config",
+		"function": "set",
+		"args": [
+			{
+				"name": "max_roles",
+				"description": "set max roles",
+				"type": "sub_command",
+				"args": [
+					{
+						"name": "number",
+						"description": "number of roles",
+						"type": "integer",
+						"required": true
+					}
+				]
+			}
+		]
+	}
+]
